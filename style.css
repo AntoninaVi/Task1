@@ -6,9 +6,6 @@
 html {
     font-family: "Inter", sans-serif;
 }
-body {
-    overflow: hidden;
-}
 .container {
     display: flex;
     width: 1680px;
