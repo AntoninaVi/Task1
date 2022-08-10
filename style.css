@@ -107,10 +107,14 @@ html {
     line-height: 25px;
     opacity: 0.8;
 }
+.picture{
+    margin-right: 100px;
+    padding-top: 50px;
+}
 .photo-text {
     position: absolute;
     bottom: 27%;
-    right: 15%;
+    right: 17%;
     width: 375px;
     text-align: left;
     font-style: normal;
@@ -119,5 +123,5 @@ html {
     line-height: 35px;
 }
 .photo{
-    width: 100%;
+   
 }
