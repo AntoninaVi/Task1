@@ -9,6 +9,7 @@ html {
 .container {
     display: flex;
     width: 1680px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
@@ -19,7 +20,32 @@ html {
     color: #ffffff;
     text-decoration: none;
 }
-
+@media screen and (max-width: 1280px) {
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
 .main-title {
     font-weight: 600;
     font-size: 75px;
@@ -27,38 +53,118 @@ html {
     color: #ffffff;
     margin-bottom: 65px;
 }
+@media screen and (max-width: 1370px) {
+    .main-title {
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .main-title {
+        font-size: 60px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main-title {
+        font-size: 40px;
+    }
+}
 .main-information {
     max-width: 510px;
     margin-right: 51px;
     margin-left: 100px;
+}
+@media screen and (max-width: 1550px) {
+    .main-information {
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width: 1370px) {
+    .main-information {
+        max-width: 380px;
+        margin-right: 31px;
+    }
+}
+@media screen and (max-width: 1310px) {
+    .main-information {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .main-information {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .main-information {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 .information {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+@media screen and (max-width: 912px) {
+    .information {
+        margin-bottom: 50px;
+    }
+}
 .info {
-    margin-right: 150px;
     margin-bottom: 45px;
 }
+@media screen and (max-width: 1280px) {
+    .info {
+        margin-bottom: 20px;
+    }
+}
 .info__title {
-    font-weight: 500;
     font-size: 15px;
     line-height: 25px;
     opacity: 0.6;
 }
+@media screen and (max-width: 1280px) {
+    .info__title {
+        font-size: 13px;
+    }
+}
 .info__paragraph {
-    font-weight: 500;
     font-size: 15px;
     line-height: 25px;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: auto;
+    white-space: nowrap;
+    width: 200px;
+}
+@media screen and (max-width: 1280px) {
+    .info__paragraph {
+        max-width: 130px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .info__paragraph {
+        max-width: 145px;
+        font-size: 13px;
+    }
 }
 .tech-title {
     margin-bottom: 15px;
 }
+@media screen and (max-width: 1280px) {
+    .tech-title {
+        margin-bottom: 10px;
+    }
+}
 .tech-progress {
     margin-bottom: 17px;
+}
+@media screen and (max-width: 1280px) {
+    .tech-progress {
+        margin-bottom: 8px;
+    }
 }
 .tech-info {
     font-weight: 500;
@@ -72,6 +178,7 @@ html {
     padding: 1px;
     border-radius: 10px;
 }
+
 .progress-bar-fill {
     display: block;
     height: 7px;
@@ -85,13 +192,42 @@ html {
     color: #ffffff;
     opacity: 0.9;
 }
+@media screen and (max-width: 1370px) {
+    .title {
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .title {
+        font-size: 22px;
+    }
+}
 .biography {
     max-width: 462px;
     margin-right: 49px;
     margin-top: 97px;
 }
+@media screen and (max-width: 1100px) {
+    .biography {
+        margin-right: 31px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .biography {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .biography-title {
     margin-bottom: 15px;
+}
+@media screen and (max-width: 1050px) {
+    .biography-title {
+        margin-bottom: 10px;
+    }
 }
 .text {
     margin-bottom: 50px;
@@ -100,6 +236,30 @@ html {
     line-height: 25px;
     opacity: 0.8;
 }
+@media screen and (max-width: 1480px) {
+    .text {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1370px) {
+    .text {
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .text {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
 .biography-text-list {
     margin-left: 15px;
     font-weight: 500;
@@ -107,14 +267,75 @@ html {
     line-height: 25px;
     opacity: 0.8;
 }
+@media screen and (max-width: 1550px) {
+    .biography-text-list {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1370px) {
+    .biography-text-list {
+        line-height: 20px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .biography-text-list {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .biography-text-list {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
 .picture {
+    position: relative;
     margin-right: 100px;
     padding-top: 50px;
 }
+@media screen and (max-width: 1550px) {
+    .picture {
+        margin-right: 70px;
+    }
+}
+@media screen and (max-width: 1310px) {
+    .picture {
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .picture {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .picture {
+        height: 50%;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .photo {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 912px) {
+    .photo {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .photo {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .photo-text {
-    position: relative;
-    bottom: 23%;
-    left: 11%;
+    position: absolute;
+    bottom: 11%;
+    left: 9%;
     max-width: 375px;
     text-align: left;
     font-style: normal;
@@ -122,6 +343,20 @@ html {
     font-size: 30px;
     line-height: 35px;
 }
-.photo {
-    position: relative;
+@media screen and (max-width: 1550px) {
+    .photo-text {
+        bottom: 15%;
+        left: 10%;
+    }
+}
+@media screen and (max-width: 1370px) {
+    .photo-text {
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .photo-text {
+        font-size: 25px;
+        line-height: 27px;
+    }
 }
