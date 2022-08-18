@@ -134,9 +134,13 @@ html {
     font-size: 15px;
     line-height: 25px;
     text-overflow: ellipsis;
-    overflow: auto;
-    white-space: nowrap;
+    overflow: hidden;
+    white-space: wrap;
     width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    
 }
 @media screen and (max-width: 1280px) {
     .info__paragraph {
