@@ -140,7 +140,6 @@ html {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    
 }
 @media screen and (max-width: 1280px) {
     .info__paragraph {
@@ -319,6 +318,15 @@ html {
         height: 50%;
     }
 }
+@media screen and (max-width: 320px) {
+    .picture {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        
+    }
+}
 @media screen and (max-width: 1050px) {
     .photo {
         width: 350px;
@@ -336,6 +344,7 @@ html {
         margin-right: auto;
     }
 }
+
 .photo-text {
     position: absolute;
     bottom: 11%;
@@ -362,5 +371,11 @@ html {
     .photo-text {
         font-size: 25px;
         line-height: 27px;
+    }
+}
+@media screen and (max-width: 320px){
+    .photo-text{
+        font-size: 20px;
+        line-height: 23px;
     }
 }
